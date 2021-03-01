@@ -9,7 +9,6 @@ function B = matrix_inversion(x) %h(r,c) -> h(-r,-c)
 end
 
 
-
                 
                 
                     
