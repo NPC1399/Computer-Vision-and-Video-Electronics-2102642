@@ -13,6 +13,5 @@ function B = myconv2(image,filter) %same size 2d convolution
                end
            end
        end
-   end
-   B = uint8(B);
+       
 end
