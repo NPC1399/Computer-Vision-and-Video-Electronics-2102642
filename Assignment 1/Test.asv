@@ -15,26 +15,26 @@ box_filter_c = (1/25)*[1 1 1 1 1;1 1 1 1 1;1 1 1 1 1;1 1 1 1 1;1 1 1 1 1];
 %filter a
 Lenna_a = myconv2(Lenna,box_filter_a);
 Traffic_a = myconv2(Traffic,box_filter_a);
-%imwrite(Lenna_a,'Lenna_a.png');
-%imwrite(Traffic_a,'Traffic_a.png');
+%%imwrite(Lenna_a,'Lenna_a.png');
+%%imwrite(Traffic_a,'Traffic_a.png');
 Lenna_a_test = imfilter(Lenna,box_filter_a);
 Traffic_a_test = imfilter(Traffic,box_filter_a);
 %filter b
 Lenna_b = myconv2(Lenna,box_filter_b);
 Traffic_b = myconv2(Traffic,box_filter_b);
-%imwrite(Lenna_b,'Lenna_b.png');
-%imwrite(Traffic_b,'Traffic_b.png');
+%%imwrite(Lenna_b,'Lenna_b.png');
+%%imwrite(Traffic_b,'Traffic_b.png');
 Lenna_b_test = imfilter(Lenna,box_filter_b);
 Traffic_b_test = imfilter(Traffic,box_filter_b);
 %filter c
 Lenna_c = myconv2(Lenna,box_filter_c);
 Traffic_c = myconv2(Traffic,box_filter_c);
-%imwrite(Lenna_c,'Lenna_c.png');
-%imwrite(Traffic_c,'Traffic_c.png');
+%%imwrite(Lenna_c,'Lenna_c.png');
+%%imwrite(Traffic_c,'Traffic_c.png');
 Lenna_c_test = imfilter(Lenna,box_filter_c);
 Traffic_c_test = imfilter(Traffic,box_filter_c);
-imwrite(Lenna_c_test,'Lenna_c_test.png');
-imwrite(Traffic_c_test,'Traffic_c_test.png');
+%%imwrite(Lenna_c_test,'Lenna_c_test.png');
+%%imwrite(Traffic_c_test,'Traffic_c_test.png');
 
 %Prblem 3
 laplacian_44 = [0 1 0;1 -4 1;0 1 0];
@@ -46,40 +46,40 @@ sobel_y = [1 2 1;0 0 0;-1 -2 -1];
 %laplac 4 by 4
 human_l_44 = myconv2(Human,laplacian_44);
 building_l_44 = myconv2(Building,laplacian_44);
-%imwrite(human_l_44,'human_l_44.png');
-%imwrite(building_l_44,'building_l_44.png');
+%%imwrite(human_l_44,'human_l_44.png');
+%%imwrite(building_l_44,'building_l_44.png');
 human_l_44_test = imfilter(Human,laplacian_44);
 building_l_44_test = imfilter(Building,laplacian_44);
 %laplac 8 by 8
 human_l_88 = myconv2(Human,laplacian_88);
 building_l_88 = myconv2(Building,laplacian_88);
-%imwrite(human_l_88,'human_l_88.png');
-%imwrite(building_l_88,'building_l_88.png');
+%%imwrite(human_l_88,'human_l_88.png');
+%%imwrite(building_l_88,'building_l_88.png');
 human_l_88_test = imfilter(Human,laplacian_88);
 building_l_88_test = imfilter(Building,laplacian_88);
 %prewitt x
 human_p_x = myconv2(Human,prewitt_x);
 building_p_x = myconv2(Building,prewitt_x);
-%imwrite(human_p_x,'human_p_x.png');
-%imwrite(building_p_x,'building_p_x.png');
+%%imwrite(human_p_x,'human_p_x.png');
+%%imwrite(building_p_x,'building_p_x.png');
 human_p_x_test = imfilter(Human,prewitt_x);
 building_p_x_test = imfilter(Building,prewitt_x);
-%imwrite(human_p_x_test,'human_p_x_test.png');
-%imwrite(building_p_x_test,'building_p_x_test.png');
+%%imwrite(human_p_x_test,'human_p_x_test.png');
+%%imwrite(building_p_x_test,'building_p_x_test.png');
 %prewitt_y
 human_p_y = myconv2(Human,prewitt_y);
 building_p_y = myconv2(Building,prewitt_y);
-%imwrite(human_p_y,'human_p_y.png');
-%imwrite(building_p_y,'building_p_y.png');
+%%imwrite(human_p_y,'human_p_y.png');
+%%imwrite(building_p_y,'building_p_y.png');
 human_p_y_test = imfilter(Human,prewitt_y);
 building_p_y_test = imfilter(Building,prewitt_y);
-%imwrite(human_p_y_test,'human_p_y_test.png');
-%imwrite(building_p_y_test,'building_p_y_test.png');
+%%imwrite(human_p_y_test,'human_p_y_test.png');
+%%imwrite(building_p_y_test,'building_p_y_test.png');
 %sobel x
 human_s_x = myconv2(Human,sobel_x);
 building_s_x = myconv2(Building,sobel_x);
-%imwrite(human_s_x,'human_s_x.png');
-%imwrite(building_s_x,'building_s_x.png');
+%%imwrite(human_s_x,'human_s_x.png');
+%%imwrite(building_s_x,'building_s_x.png');
 human_s_x_test = imfilter(Human,sobel_x);
 building_s_x_test = imfilter(Building,sobel_x);
 %imwrite(human_s_x_test,'human_s_x_test.png');
